@@ -1,19 +1,31 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-const Navbar: React.FC = () => {
+export default function Nav() {
+  const location = useLocation();
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">Ntombenhle Ngcobo</div>
-      <div className="navbar-links">
-        <NavLink to="/" end>
-          Home
-        </NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+    <header className="site-nav">
+      <div className="container nav-inner" style={{ width: '90%' }}>
+        <div className="brand">Ntombenhle Ngcobo</div>
+        <nav>
+          <ul>
+            <li className={location.hash === "#about" ? "active" : ""}>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}
