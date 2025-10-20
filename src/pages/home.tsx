@@ -652,7 +652,7 @@ export default function Home() {
               <p className="edu-desc">
                 Comprehensive program covering software development, web
                 technologies, database management, and application design.
-                Completed multiple hands‑on projects using ASP.NET and C#.
+                Completed multiple hands on projects.
               </p>
             </motion.div>
 
@@ -844,7 +844,7 @@ export default function Home() {
                   <div className="panel-sub">Location</div>
                   <div>
                     <a
-                      href="https://www.google.com/maps?q=30+Syringa+Avenue,+Bulwer+Road,+Durban+4001,+South+Africa"
+                      href="https://www.google.com/maps?q=Durban+4001,+South+Africa"
                       target="_blank"
                       rel="noreferrer"
                       className="contact-link"
@@ -871,8 +871,7 @@ export default function Home() {
                         />
                       </svg>
                       <span>
-                        30 Syringa Avenue, Bulwer Road, Durban 4001, South
-                        Africa
+                        Durban 4001, South Africa
                       </span>
                     </a>
                   </div>
