@@ -53,7 +53,7 @@ a {
 }
 .site-nav nav { flex: 1; display: flex; justify-content: flex-end; }
 
-.brand { font-weight: 700; font-size: 22px; white-space: nowrap; }
+.brand { font-weight: 700; font-size: 18px; white-space: nowrap; }
 
 .site-nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
 .site-nav a { color: #374151; font-weight: 500; }
@@ -96,9 +96,9 @@ a {
 
 .hero-right { max-width: 640px; }
 .small-tag { display: inline-block; padding: 6px 12px; border-radius: 999px; background: #eef2ff; color: #4338ca; font-weight: 600; margin-bottom: 16px; }
-.hero-name { font-size: 70px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 8px; }
+.hero-name { font-size: 64px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 8px; }
 .hero-name .accent { color: #111827; font-weight: 800; }
-.hero-role { font-size: 26px; color: #6b7280; margin-bottom: 16px; font-weight: 600; }
+.hero-role { font-size: 22px; color: #6b7280; margin-bottom: 16px; font-weight: 600; }
 .hero-desc { color: #4b5563; margin-bottom: 24px; }
 .cta-row { display: flex; gap: 12px; margin-bottom: 16px; }
 .btn { background: #111827; color: #fff; border: 1px solid #111827; padding: 10px 14px; border-radius: 10px; font-weight: 600; }
@@ -151,7 +151,7 @@ a {
 .pill {
   display: inline-block;
   padding: 6px 10px;
-  font-size: 18px;
+  font-size: 12px;
   background: #f3f4f6;
   border: 1px solid #e5e7eb;
   color: #374151;
@@ -206,7 +206,7 @@ a {
 /* Section headings */
 section { padding: 56px 0; }
 section .section-header { text-align: center; margin-bottom: 20px; }
-section .section-title { font-size: 32px; font-weight: 800; }
+section .section-title { font-size: 28px; font-weight: 800; }
 section .section-sub { color: #6b7280; }
 
 /* ===== Skills (Monochrome) ===== */
@@ -240,7 +240,7 @@ section .section-sub { color: #6b7280; }
 .tag {
   display: inline-block;
   padding: 6px 10px;
-  font-size: 18px;
+  font-size: 12px;
   background: #f6f7f8;
   border: 1px solid #e5e7eb;
   color: #111827;
@@ -479,7 +479,7 @@ section .section-sub { color: #6b7280; }
   .hero-name { font-size: 28px; }
   .hero-photo-circle { width: 180px; height: 180px; }
   .section-title { font-size: 20px; }
-  .nav-inner { flex-direction: column; gap: 8px; }
+  .nav-inner { flex-direction: column; gap: 8px;  }
   .site-nav ul { justify-content: flex-start; } /* left aligned */
   
   /* Projects cards: 1 per row */
