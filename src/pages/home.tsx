@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/images/Gemini_Generated_Image_b1sp62b1sp62b1sp (1).png";
+import profileImg from "../assets/images/WhatsApp Image 2025-07-24 at 14.34.33.jpeg";
 import weather from "../assets/images/images.jfif";
 import job from "../assets/images/jobtracker.png";
 import linki from "../assets/images/links (1).jfif";
-import dictionary from "../assets/images/dictionary(1).jfif"
-
-
+import dictionary from "../assets/images/dictionary(1).jfif";
 
 // Reveal-on-scroll: simple fade with no sliding
 const fadeIn = {
@@ -30,11 +28,11 @@ export default function Home() {
             <motion.div className="hero-right" variants={fadeIn}>
               <span className="small-tag">Welcome to my portfolio</span>
               <h1 className="hero-name">Ntombenhle Ngcobo</h1>
-              <p className="hero-role">Software Developer</p>
+              <p className="hero-role">Software Engeneer | Software Developer</p>
               <p className="hero-desc">
                 ICT Applications Development graduate with hands-on training and
-                strong skills in software development, web technologies, and
-                cybersecurity. Passionate about building innovative solutions.
+                strong skills in software development, web technologies
+                .Passionate about building innovative solutions.
               </p>
               <div className="contact-line">
                 <a href="mailto:ngcobontombenhle434@gmail.com">
@@ -471,10 +469,7 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.05 }}
             >
               <div className="project-thumb">
-                <img
-                  src={job}
-                  alt="Job Application Tracker"
-                />
+                <img src={job} alt="Job Application Tracker" />
               </div>
               <div className="panel-title">Job Application Tracker</div>
               <div className="panel-sub">
@@ -507,10 +502,7 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.1 }}
             >
               <div className="project-thumb">
-                <img
-                  src={linki}
-                  alt="Favorite Links Manager"
-                />
+                <img src={linki} alt="Favorite Links Manager" />
               </div>
               <div className="panel-title">Favorite Links Manager</div>
               <div className="panel-sub">
@@ -545,10 +537,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <div className="project-thumb">
-                <img
-                  src={dictionary}
-                  alt="dictionary"
-                />
+                <img src={dictionary} alt="dictionary" />
               </div>
               <div className="panel-title">Dictionary</div>
               <div className="panel-sub">
@@ -876,9 +865,7 @@ export default function Home() {
                           strokeWidth="1.6"
                         />
                       </svg>
-                      <span>
-                        Durban 4001, South Africa
-                      </span>
+                      <span>Durban 4001, South Africa</span>
                     </a>
                   </div>
                 </div>
