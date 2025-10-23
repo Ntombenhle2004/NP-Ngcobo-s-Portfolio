@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/images/Gemini_Generated_Image_b1sp62b1sp62b1sp (1).png";
+import weather from "../assets/images/images.jfif"
+
 
 // Reveal-on-scroll: simple fade with no sliding
 const fadeIn = {
@@ -403,7 +405,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <div className="project-thumb">
-                <img src="src/assets/images/images.jfif" alt="Weather App" />
+                <img src={weather} alt="Weather App" />
               </div>
               <div className="panel-title">Weather App</div>
               <div className="panel-sub">
