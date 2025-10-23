@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/images/Gemini_Generated_Image_b1sp62b1sp62b1sp (1).png";
-import weather from "../assets/images/images.jfif"
+import weather from "../assets/images/images.jfif";
+import job from "../assets/images/jobtracker.png";
+import linki from "../assets/images/links (1).jfif";
+import dictionary from "../assets/images/dictionary(1).jfif"
+
 
 
 // Reveal-on-scroll: simple fade with no sliding
@@ -468,7 +472,7 @@ export default function Home() {
             >
               <div className="project-thumb">
                 <img
-                  src="src/assets/images/jobtracker.png"
+                  src={job}
                   alt="Job Application Tracker"
                 />
               </div>
@@ -504,7 +508,7 @@ export default function Home() {
             >
               <div className="project-thumb">
                 <img
-                  src="src/assets/images/links (1).jfif"
+                  src={linki}
                   alt="Favorite Links Manager"
                 />
               </div>
@@ -542,8 +546,8 @@ export default function Home() {
             >
               <div className="project-thumb">
                 <img
-                  src="src/assets/images/dictionary(1).jfif"
-                  alt="Converter Hub Web Application"
+                  src={dictionary}
+                  alt="dictionary"
                 />
               </div>
               <div className="panel-title">Dictionary</div>
