@@ -4,6 +4,7 @@ import weather from "../assets/images/images.jfif";
 import job from "../assets/images/jobtracker.png";
 import linki from "../assets/images/links (1).jfif";
 import dictionary from "../assets/images/dictionary(1).jfif";
+import hotel from "../assets/images/download (1).jfif";
 
 // Reveal-on-scroll: simple fade with no sliding
 const fadeIn = {
@@ -28,7 +29,9 @@ export default function Home() {
             <motion.div className="hero-right" variants={fadeIn}>
               <span className="small-tag">Welcome to my portfolio</span>
               <h1 className="hero-name">Ntombenhle Ngcobo</h1>
-              <p className="hero-role">Software Engeneer | Software Developer</p>
+              <p className="hero-role">
+                Software Engeneer | Software Developer
+              </p>
               <p className="hero-desc">
                 ICT Applications Development graduate with hands-on training and
                 strong skills in software development, web technologies
@@ -110,7 +113,7 @@ export default function Home() {
               <div className="cta-row" style={{ marginTop: 12 }}>
                 <a
                   className="btn btn-linkedin"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/ntombenhle-ngcobo-5a0499334/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -127,7 +130,7 @@ export default function Home() {
                 </a>
                 <a
                   className="btn btn-github"
-                  href="https://github.com"
+                  href="https://github.com/Ntombenhle2004"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -206,6 +209,7 @@ export default function Home() {
                 <span className="tag">JavaScript</span>
                 <span className="tag">TypeScript</span>
                 <span className="tag">React</span>
+                <span className="tag">React Native</span>
                 <span className="tag">UX/UI Design</span>
                 <span className="tag">Bootstrap</span>
                 <span className="tag">Tailwind CSS</span>
@@ -397,6 +401,40 @@ export default function Home() {
           </div>
 
           <div className="cards-grid">
+            <motion.div
+              className="card grid-span-4"
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="project-thumb">
+               
+                <img src={hotel} alt="hotel App" />
+              
+              </div>
+              <div className="panel-title">Hotel Booking Platform</div>
+              <div className="panel-sub">
+                A full-stack hotel booking application with accommodation listings, search, favourites, and secure bookings. Users can manage profiles, bookings, and reviews, while admins manage hotels, availability, pricing, and reservations.
+              </div>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <span className="pill">Node.js</span>
+                <span className="pill">PostgreSQL</span>
+                <span className="pill">Redux</span>
+                <span className="pill">React</span>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                <a
+                  href="https://the-vellum-frontend.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  View Project
+                </a>
+              </div>
+            </motion.div>
             {/* Weather App - first card */}
             <motion.div
               className="card grid-span-4"
@@ -432,34 +470,7 @@ export default function Home() {
                 </a>
               </div>
             </motion.div>
-            {/* <motion.div
-              className="card grid-span-4"
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="project-thumb">
-                <img
-                  src="src/assets/images/shopping(1).jfif"
-                  alt="Shopping List Manager"
-                />
-              </div>
-              <div className="panel-title">Shopping List Manager</div>
-              <div className="panel-sub">
-                The Shopping List Manager allows users to securely create, edit,
-                delete,search and organize shopping lists and add items to the
-                list.
-              </div>
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                <span className="pill">React</span>
-                <span className="pill">TypeScript</span>
-                <span className="pill">Redux</span>
-                <span className="pill">JSON Server</span>
-                <span className="pill">React Router</span>
-              </div>
-            </motion.div> */}
+          
             <motion.div
               className="card grid-span-4"
               variants={fadeIn}
