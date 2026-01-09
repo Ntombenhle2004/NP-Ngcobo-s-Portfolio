@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/images/WhatsApp Image 2025-07-24 at 14.34.33.jpeg";
+import profileImg from "../assets/images/cb5e09de-b9ce-47ba-91d7-bd62597337cf.jfif";
 import weather from "../assets/images/images.jfif";
 import job from "../assets/images/jobtracker.png";
 import linki from "../assets/images/links (1).jfif";
 import dictionary from "../assets/images/dictionary(1).jfif";
 import hotel from "../assets/images/download (1).jfif";
+import record from "../assets/images/download.jpg";
 
 // Reveal-on-scroll: simple fade with no sliding
 const fadeIn = {
@@ -33,9 +34,7 @@ export default function Home() {
                 Software Engeneer | Software Developer
               </p>
               <p className="hero-desc">
-                ICT Applications Development graduate with hands-on training and
-                strong skills in software development, web technologies
-                .Passionate about building innovative solutions.
+                ICT Applications Development graduate with strong skills in software development and web technologies, focused on building practical, innovative, and reliable digital solutions.
               </p>
               <div className="contact-line">
                 <a href="mailto:ngcobontombenhle434@gmail.com">
@@ -350,6 +349,7 @@ export default function Home() {
                 <span className="tag">Android Studio</span>
                 <span className="tag">Brackets</span>
                 <span className="tag">Figma</span>
+                <span className="tag">Expo</span>
               </div>
             </motion.div>
           </div>
@@ -435,7 +435,42 @@ export default function Home() {
                 </a>
               </div>
             </motion.div>
-            {/* Weather App - first card */}
+            {/* Voice Recorder App - second card */}
+            <motion.div
+              className="card grid-span-4"
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              transition={{ duration: 0.3 }}
+            >
+               <div className="project-thumb">
+               
+                <img src={record} alt="voice recorder app" />
+              
+              </div>
+
+              <div className="panel-title">Voice Recorder App</div>
+              <div className="panel-sub">
+                Developed a React Native Voice Recorder App that allows users to record, play, delete, rename, and search voice notes, with persistent storage, offline access, and a user-friendly interface.
+              </div>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <span className="pill">React Native</span>
+                <span className="pill">Bootstrap</span>
+                <span className="pill">Expo</span>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                <a
+                  href="https://expo.dev/artifacts/eas/pp2ptTJggv2CMEZyFDJkgC.apk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  Download App
+                </a>
+              </div>
+            </motion.div>
+            {/* Weather App */}
             <motion.div
               className="card grid-span-4"
               variants={fadeIn}
@@ -749,19 +784,29 @@ export default function Home() {
             </div>
             <div className="certs-grid">
               <span className="cert-chip">
-                Full Stack Development • FNB App Academy
-              </span>
-              <span className="cert-chip">Networking Essentials • Cisco</span>
-              <span className="cert-chip">
-                Responsive Web Design • freeCodeCamp
+                Full Stack Development
+                <br />• FNB App Academy
               </span>
               <span className="cert-chip">
-                Cybersecurity Essentials • Cisco
+                Networking Essentials
+                <br />• Cisco
               </span>
               <span className="cert-chip">
-                JavaScript Algorithms and Data Structures • freeCodeCamp
+                Responsive Web Design
+                <br />• freeCodeCamp
               </span>
-              <span className="cert-chip">Linux Unhatched • Cisco</span>
+              <span className="cert-chip">
+                Cybersecurity Essentials
+                <br />• Cisco
+              </span>
+              <span className="cert-chip">
+                JavaScript Algorithms and Data Structures
+                <br />• freeCodeCamp
+              </span>
+              <span className="cert-chip">
+                Linux Unhatched
+                <br />• Cisco
+              </span>
             </div>
           </motion.div>
         </div>
@@ -895,7 +940,7 @@ export default function Home() {
               <div style={{ display: "grid", gap: 10 }}>
                 <a
                   className="btn btn-linkedin"
-                  href="https://linkedin.com"
+                  href="www.linkedin.com/in/ntombenhle-ngcobo-5a0499334"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -912,7 +957,7 @@ export default function Home() {
                 </a>
                 <a
                   className="btn btn-github"
-                  href="https://github.com"
+                  href="https://github.com/Ntombenhle2004"
                   target="_blank"
                   rel="noreferrer"
                 >

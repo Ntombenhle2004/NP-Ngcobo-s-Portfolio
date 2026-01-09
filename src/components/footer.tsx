@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="copy">© {new Date().getFullYear()} Ntombenhle Ngcobo</div>
         <div className="links">
-          <Link to="#">Privacy</Link>
-          <a href="#">Contact</a>
+          {/* <Link to="#">Privacy</Link> */}
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </footer>
