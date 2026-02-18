@@ -3,9 +3,11 @@ import profileImg from "../assets/images/cb5e09de-b9ce-47ba-91d7-bd62597337cf.jf
 import weather from "../assets/images/images.jfif";
 import job from "../assets/images/jobtracker.png";
 import linki from "../assets/images/links (1).jfif";
-import dictionary from "../assets/images/dictionary(1).jfif";
+import shopping from "../assets/images/shopping(1).jfif";
 import hotel from "../assets/images/download (1).jfif";
 import record from "../assets/images/download.jpg";
+import restaurent from "../assets/images/restaurent.png"
+import Ai from "../assets/images/AIjfif.jfif"
 
 // Reveal-on-scroll: simple fade with no sliding
 const fadeIn = {
@@ -34,7 +36,9 @@ export default function Home() {
                 Software Engeneer | Software Developer
               </p>
               <p className="hero-desc">
-                ICT Applications Development graduate with strong skills in software development and web technologies, focused on building practical, innovative, and reliable digital solutions.
+                ICT Applications Development graduate with strong skills in
+                software development and web technologies, focused on building
+                practical, innovative, and reliable digital solutions.
               </p>
               <div className="contact-line">
                 <a href="mailto:ngcobontombenhle434@gmail.com">
@@ -209,9 +213,11 @@ export default function Home() {
                 <span className="tag">TypeScript</span>
                 <span className="tag">React</span>
                 <span className="tag">React Native</span>
-                <span className="tag">UX/UI Design</span>
                 <span className="tag">Bootstrap</span>
-                <span className="tag">Tailwind CSS</span>
+                <span className="tag">Media Queries</span>
+                <span className="tag">API Integration</span>
+                <span className="tag">localStorage</span>
+                <span className="tag">UX/UI Design</span>
               </div>
             </motion.div>
 
@@ -262,6 +268,9 @@ export default function Home() {
                 <span className="tag">C#</span>
                 <span className="tag">ASP.NET</span>
                 <span className="tag">Node.js</span>
+                <span className="tag">Express.js</span>
+                <span className="tag">JSON Server</span>
+                <span className="tag">RESTful APIs</span>
               </div>
             </motion.div>
 
@@ -307,9 +316,9 @@ export default function Home() {
                 <div className="skill-title">Database</div>
               </div>
               <div className="skill-tags">
-                <span className="tag">SQL</span>
+                <span className="tag">PostgreSQL</span>
                 <span className="tag">Azure</span>
-                <span className="tag">MongoDB</span>
+                <span className="tag">Firebase</span>
               </div>
             </motion.div>
 
@@ -350,6 +359,7 @@ export default function Home() {
                 <span className="tag">Brackets</span>
                 <span className="tag">Figma</span>
                 <span className="tag">Expo</span>
+                <span className="tag">Render</span>
               </div>
             </motion.div>
           </div>
@@ -410,23 +420,123 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <div className="project-thumb">
-               
                 <img src={hotel} alt="hotel App" />
-              
               </div>
-              <div className="panel-title">Hotel Booking Platform</div>
+              <div className="panel-title">The Vellum</div>
               <div className="panel-sub">
-                A full-stack hotel booking application with accommodation listings, search, favourites, and secure bookings. Users can manage profiles, bookings, and reviews, while admins manage hotels, availability, pricing, and reservations.
+                hotel booking app with room listings, search, favourites, and
+                secure bookings. Users can edit profiles, bookings, and reviews,
+                while admins manage hotels, availability, pricing, and
+                reservations.
               </div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <span className="pill">Node.js</span>
+                <span className="tag">Express.js</span>
                 <span className="pill">PostgreSQL</span>
+                <span className="pill">RESTful API </span>
                 <span className="pill">Redux</span>
                 <span className="pill">React</span>
+                <span className="pill">Typescript</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Bootstrap</span>
+                <span className="tag">Media Queries</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
               </div>
               <div style={{ marginTop: 12 }}>
                 <a
                   href="https://the-vellum-frontend.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  View Project
+                </a>
+              </div>
+            </motion.div>
+
+            {/* restaurent app */}
+            <motion.div
+              className="card grid-span-4"
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="project-thumb">
+                <img src={restaurent} alt="Restaurent App" />
+              </div>
+
+              <div className="panel-title">Ambrosia App</div>
+              <div className="panel-sub">
+                Restaurant Ordering App Allows users to browse menus, customize
+                orders, manage a cart, checkout, and track orders, with an admin
+                dashboard for management and analytics.
+              </div>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <span className="pill">React Native</span>
+                <span className="pill">React</span>
+                <span className="pill">TypeScript</span>
+                <span className="pill">Bootstrap</span>
+                <span className="pill">Firebase</span>
+                <span className="pill">API Integration</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Expo</span>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                <a
+                  href="https://expo.dev/artifacts/eas/wFiMXzmV3Gom868qyqpFtz.apk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  Download Apk
+                </a>
+              </div>
+            </motion.div>
+            {/* Weather App */}
+            <motion.div
+              className="card grid-span-4"
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="project-thumb">
+                <img src={Ai} alt="Weather App" />
+              </div>
+              <div className="panel-title">Tribal Librarian</div>
+              <div className="panel-sub">
+                CodeTribe AI Chatbot: Provides learners with course navigation,
+                assessment guidance, reduces facilitator workload, and includes
+                an admin dashboard for managing reference documents and user
+                access.{" "}
+              </div>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <span className="pill">Node.js</span>
+                <span className="pill">Firestore</span>
+                <span className="pill">RESTful API </span>
+                <span className="pill">Redux</span>
+                <span className="pill">React</span>
+                <span className="pill">Typescript</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Bootstrap</span>
+                <span className="tag">Media Queries</span>
+                <span className="pill">API Integration</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                <a
+                  href="https://chatbot-nbhu.onrender.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="view-button"
@@ -444,19 +554,24 @@ export default function Home() {
               viewport={{ amount: 0.2, once: true }}
               transition={{ duration: 0.3 }}
             >
-               <div className="project-thumb">
-               
+              <div className="project-thumb">
                 <img src={record} alt="voice recorder app" />
-              
               </div>
 
               <div className="panel-title">Voice Recorder App</div>
               <div className="panel-sub">
-                Developed a React Native Voice Recorder App that allows users to record, play, delete, rename, and search voice notes, with persistent storage, offline access, and a user-friendly interface.
+                Voice Recorder App that allows users to record, play, delete,
+                rename, and search voice notes, with persistent storage, offline
+                access, and a user-friendly interface.
               </div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <span className="pill">React Native</span>
+                <span className="pill">React</span>
+                <span className="pill">TypeScript</span>
                 <span className="pill">Bootstrap</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
                 <span className="pill">Expo</span>
               </div>
               <div style={{ marginTop: 12 }}>
@@ -466,7 +581,46 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="view-button"
                 >
-                  Download App
+                  Download Apk
+                </a>
+              </div>
+            </motion.div>
+            <motion.div
+              className="card grid-span-4"
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="project-thumb">
+                <img src={shopping} alt="dictionary" />
+              </div>
+              <div className="panel-title">Shopping-List</div>
+              <div className="panel-sub">
+                A multi-functional converter application featuring File
+                Transfer, Temperature Converter, Scientific Notation Converter,
+                and Metric Prefix Converter.
+              </div>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <span className="pill">Redux</span>
+                <span className="pill">CSS</span>
+                <span className="pill">TypeScript</span>
+                <span className="pill">React</span>
+                <span className="pill">JSON Server</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                <a
+                  href="https://shopping-list-prsw.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  View Project
                 </a>
               </div>
             </motion.div>
@@ -490,9 +644,16 @@ export default function Home() {
               </div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <span className="pill">React</span>
+                <span className="pill">Redux</span>
+                <span className="pill">TypeScript</span>
+                <span className="pill">CSS</span>
+                <span className="tag">Media Queries</span>
+                <span className="pill">API Integration</span>
                 <span className="pill">localStorage</span>
-                <span className="pill">React Router</span>
-                <span className="pill">Geolocation</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
               </div>
               <div style={{ marginTop: 12 }}>
                 <a
@@ -505,7 +666,7 @@ export default function Home() {
                 </a>
               </div>
             </motion.div>
-          
+
             <motion.div
               className="card grid-span-4"
               variants={fadeIn}
@@ -524,9 +685,17 @@ export default function Home() {
               </div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <span className="pill">React</span>
-                <span className="pill">JSON Server</span>
+
+                <span className="pill">Redux</span>
+                <span className="pill">TypeScript</span>
+                <span className="pill">CSS</span>
+                <span className="tag">Media Queries</span>
                 <span className="pill">localStorage</span>
-                <span className="pill">React Router</span>
+                <span className="pill">JSON Server</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
               </div>
               <div style={{ marginTop: 12 }}>
                 <a
@@ -556,10 +725,19 @@ export default function Home() {
                 favorite website links.{" "}
               </div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+
                 <span className="pill">React</span>
-                <span className="pill">localStorage</span>
+
+                <span className="pill">Redux</span>
+                <span className="pill">TypeScript</span>
                 <span className="pill">CSS</span>
-                <span className="pill">Media Queries</span>
+                <span className="tag">Media Queries</span>
+                <span className="pill">localStorage</span>
+                <span className="pill">JSON Server</span>
+                <span className="pill">UX/UI Design</span>
+                <span className="pill">Figma</span>
+                <span className="pill">VS Code</span>
+                <span className="pill">Render</span>
               </div>
 
               <div style={{ marginTop: 12 }}>
@@ -574,39 +752,6 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.div
-              className="card grid-span-4"
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="project-thumb">
-                <img src={dictionary} alt="dictionary" />
-              </div>
-              <div className="panel-title">Dictionary</div>
-              <div className="panel-sub">
-                A multi-functional converter application featuring File
-                Transfer, Temperature Converter, Scientific Notation Converter,
-                and Metric Prefix Converter.
-              </div>
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                <span className="pill">Redux</span>
-                <span className="pill">CSS</span>
-                <span className="pill">React</span>
-              </div>
-              <div style={{ marginTop: 12 }}>
-                <a
-                  href="https://redux-dictionary.onrender.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="view-button"
-                >
-                  View Project
-                </a>
-              </div>
-            </motion.div>
             {/* <motion.div
               className="card grid-span-4"
               variants={fadeIn}
@@ -940,7 +1085,7 @@ export default function Home() {
               <div style={{ display: "grid", gap: 10 }}>
                 <a
                   className="btn btn-linkedin"
-                  href="www.linkedin.com/in/ntombenhle-ngcobo-5a0499334"
+                  href="https://www.linkedin.com/in/ntombenhle-ngcobo-5a0499334/"
                   target="_blank"
                   rel="noreferrer"
                 >
